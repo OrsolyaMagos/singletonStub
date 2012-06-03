@@ -18,7 +18,6 @@ obj: $(SRC)
 
 all: obj
 	$(CC) -shared -o libSingleton.so $(OBJ)
-#	g++ -o singleton Singleton.cpp tests.cpp -I../cxxtest
 
 
 buildtest: all
@@ -33,13 +32,5 @@ check: buildtest
 
 clean:
 	rm -rf *.o *.so singletonTest $(TST_FILE)
-
-
-
-
-#example from http://stevemorin.blogspot.hu/2005/10/create-shared-library-with-g.html
-#1) g++ -fpic -c CLib.cpp
-#2) g++ -shared -o libCLib.so CLib.o
-#3) g++ CLibTest.cpp -o CLibTest -L. -lCLib
 
 

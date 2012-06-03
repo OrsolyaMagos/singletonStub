@@ -6,9 +6,6 @@
 
 namespace stubs
 {
-  //class SingletonStub;
-  //SingletonClass SingletonStub::getInstance();
-
   class SingletonStub: public SingletonClass
   {
     public:
