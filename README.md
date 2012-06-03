@@ -1,0 +1,4 @@
+singletonStub
+=============
+
+Stubbing out singleton
